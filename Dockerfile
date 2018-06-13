@@ -1,4 +1,5 @@
-FROM node:10
+FROM node:8
 
-RUN npm install --quiet -g \
-      legoflow-cli
+RUN npm i -g cnpm
+
+RUN cnpm i legoflow-cli -g
